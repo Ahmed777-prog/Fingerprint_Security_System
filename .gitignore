@@ -1,0 +1,7 @@
+Build/
+Debug/
+.vscode/
+.settings/
+*.hex
+*.elf
+*.o

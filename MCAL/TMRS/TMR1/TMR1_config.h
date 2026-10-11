@@ -1,0 +1,35 @@
+#ifndef MCAL_TMRS_TMR1_TMR1_CONFIG_H_
+#define MCAL_TMRS_TMR1_TMR1_CONFIG_H_
+
+/* Options:
+ * 1- TMR1_NORMAL_MODE
+ * 2- TMR1_CTC_OCR1A_MODE
+ * 3- TMR1_FAST_PWM_ICR1_MODE
+ * ... etc
+ */
+#define TMR1_OPERATING_MODE         TMR1_FAST_PWM_ICR1_MODE
+
+
+/* Options:
+ * 1- TMR1_NO_CLOCK
+ * 2- TMR1_PRESCALER_1
+ * 3- TMR1_PRESCALER_8
+ * ... etc
+ */
+#define TMR1_PRESCALER_VALUE        TMR1_PRESCALER_8
+
+
+/* Options:
+ * 1- TMR1_OC_DISCONNECTED
+ * 2- TMR1_OC_TOGGLE
+ * 3- TMR1_OC_CLEAR_NON_INVERTING
+ * 4- TMR1_OC_SET_INVERTING
+ */
+
+/* Configuration for Channel A (OC1A Pin) */
+#define TMR1_CHANNEL_A_MODE         TMR1_OC_CLEAR_NON_INVERTING
+
+/* Configuration for Channel B (OC1B Pin) */
+#define TMR1_CHANNEL_B_MODE         TMR1_OC_DISCONNECTED
+
+#endif
